@@ -4,22 +4,22 @@ cask "hydra-bin" do
 
   on_macos do
     on_intel do
-      sha256 "b283978c8663d8e5c16273ae464167be2c5041678c2d536de273de32df10a192"
+      sha256 "179d808431ea23e11665da430a6cc683525527a05d55f65bccb48626434b5c4a"
       url "https://github.com/drieks/hydra/releases/download/v#{version}/hydra_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "4b0185ffd8cb308200f6864bcadb0a00488601a8064d072e0971fa4cb624a455"
+      sha256 "4eb1d0b96347b2216ae04d0c8a26c8ed3caecab5cd9db3647a36553d79f21c75"
       url "https://github.com/drieks/hydra/releases/download/v#{version}/hydra_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "1e50cc15d68a383e6bb0c657e188607b3c5b9556ebc8ea4b32cbe2d1dc0c849a"
+      sha256 "b09f9b8a342ede501e371f53a597bfb08599106a1054b3e86686ad0d2d189681"
       url "https://github.com/drieks/hydra/releases/download/v#{version}/hydra_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "12b5faca8a10dc96a886361af9adfdb9255b8fc5d38f7d58475d8bd4811f7faf"
+      sha256 "6fac59682d224b37d4a522233ddebd3db79c8c8e6c5408afb1bbe278a0cc0fda"
       url "https://github.com/drieks/hydra/releases/download/v#{version}/hydra_#{version}_linux_arm64.tar.gz"
     end
   end
