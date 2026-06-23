@@ -11,11 +11,11 @@ class Hydra < Formula
   depends_on "go" => :build
 
   url "https://github.com/drieks/hydra/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "0c076374a388637b659c7d13a5ffb687802400b6e80da272cbf769563a0bcab6"
+  sha256 "f2ead4fe6aaf44629fb12c42f1e8ef0a7c4b903891052caae2ce5a8b9d65d32d"
 
   def install
     cd "hydra-go" do
-      system "go", "build", *std_go_args(ldflags: "-s -w -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.Version=#{version} -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.TagSHA=c00c7856b02d9973bc811a07e0302bffd6fc417f"), "./cli"
+      system "go", "build", *std_go_args(ldflags: "-s -w -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.Version=#{version} -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.TagSHA=a419c36bff96fb5b9aa3e1efa417bc6e45b9691b"), "./cli"
     end
   end
 
