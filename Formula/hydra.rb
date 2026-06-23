@@ -5,17 +5,17 @@
 class Hydra < Formula
   desc "Hydra GitOps CLI for Kubernetes cluster management"
   homepage "https://hydra-gitops.org/"
-  version "1.2.2"
+  version "1.2.3"
   license "Apache-2.0"
 
   depends_on "go" => :build
 
-  url "https://github.com/drieks/hydra/archive/refs/tags/v1.2.2.tar.gz"
-  sha256 "a36782ed4926a630ce91f84c3956473261228daecbcadbfba3d7f0c0da3868cd"
+  url "https://github.com/drieks/hydra/archive/refs/tags/v1.2.3.tar.gz"
+  sha256 "1a594f1cb9be297ac2734165b744987fb4a0912e759771b8a4a7e6529d256dec"
 
   def install
     cd "hydra-go" do
-      system "go", "build", *std_go_args(ldflags: "-s -w -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.Version=#{version} -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.TagSHA=b6f350dc9cc9f7a1ff98f35a493da2b550f8d2d7"), "./cli"
+      system "go", "build", *std_go_args(ldflags: "-s -w -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.Version=#{version} -X hydra-gitops.org/hydra/hydra-go/base/buildinfo.TagSHA=e6cb2006e2b80a326f0d6961951ba3498fc80f12"), "./cli"
     end
   end
 
